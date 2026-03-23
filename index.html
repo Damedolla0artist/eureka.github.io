@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈豪翔 | Personal Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        /* 天蓝色 + 小鱼背景 */
+        body {
+            background-color: #e0f7ff;
+            background-image: url("https://picsum.photos/id/218/1600/900");
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            line-height: 1.7;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* 白色半透卡片 */
+        .card {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 12px;
+            padding: 35px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .lang-btn {
+            padding: 10px 22px;
+            background: #5ac8fa;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #2d9cdb;
+        }
+
+        h2 {
+            font-size: 22px;
+            margin: 20px 0 12px;
+            color: #2d9cdb;
+            border-left: 4px solid #5ac8fa;
+            padding-left: 10px;
+        }
+
+        p, li {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        .update {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .en {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="lang-btn" onclick="switchLang()">中文 / English</button>
+
+    <!-- 中文 -->
+    <div class="zh">
+        <div class="card">
+            <h1>陈豪翔</h1>
+            <p>华东政法大学｜法学专业</p >
+        </div>
+
+        <div class="card">
+            <h2>基本信息</h2>
+            <p>学校：华东政法大学</p >
+            <p>专业：法学</p >
+            <p>职业方向：法律实务、合规风控、争议解决</p >
+            <p>邮箱：2534781060@qq.com</p >
+        </div>
+
+        <div class="card">
+            <h2>个人简介</h2>
+            <p>具备扎实的法学专业基础，熟悉民法、刑法、行政法及诉讼法体系，逻辑严谨，文书写作与案例分析能力突出，注重理论与实务结合，具备良好的法律检索与思辨能力，致力于在法律实务领域持续深耕。</p >
+        </div>
+
+        <div class="card">
+            <h2>专业技能</h2>
+            <ul>
+                <li>法律基础：民法、刑法、行政法、诉讼法、公司法、商法</li>
+                <li>实务能力：法律检索、文书写作、案例分析</li>
+                <li>综合能力：逻辑思辨、合规审查、中英双语阅读</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>教育经历</h2>
+            <p>华东政法大学｜法学专业｜本科在读</p >
+            <p>核心课程：法理学、宪法、民法、刑法、民事诉讼法、刑事诉讼法等</p >
+        </div>
+    </div>
+
+    <!-- 英文 -->
+    <div class="en">
+        <div class="card">
+            <h1>Haoxiang Chen</h1>
+            <p>East China University of Political Science and Law | Law</p >
+        </div>
+
+        <div class="card">
+            <h2>Basic Information</h2>
+            <p>University: East China University of Political Science and Law</p >
+            <p>Major: Law</p >
+            <p>Career Goal: Legal Practice, Compliance, Dispute Resolution</p >
+            <p>Email: 2534781060@qq.com</p >
+        </div>
+
+        <div class="card">
+            <h2>Profile</h2>
+            <p>With solid legal knowledge, familiar with civil law, criminal law, administrative law and procedural law. Logical thinking, legal research and case analysis skills are outstanding. Committed to combining theory with practice in the legal field.</p >
+        </div>
+
+        <div class="card">
+            <h2>Skills</h2>
+            <ul>
+                <li>Legal: Civil Law, Criminal Law, Procedural Law</li>
+                <li>Practical: Legal Research, Legal Writing, Case Analysis</li>
+                <li>Others: Critical Thinking, Compliance Review, Bilingual Reading</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Education</h2>
+            <p>East China University of Political Science and Law | Law | Undergraduate</p >
+            <p>Core Courses: Jurisprudence, Constitution, Civil Law, Criminal Law, Procedural Law</p >
+        </div>
+    </div>
+
+    <p class="update">最后更新 | Last Updated：2026年03月23日</p >
+
+    <script>
+        function switchLang() {
+            let zh = document.querySelector('.zh');
+            let en = document.querySelector('.en');
+            if (zh.style.display !== 'none') {
+                zh.style.display = 'none';
+                en.style.display = 'block';
+            } else {
+                zh.style.display = 'block';
+                en.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
